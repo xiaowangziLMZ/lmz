@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/rest.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    
+</head>
+<body>
+    <div class="tip">
+        <img src="image/a15.png">
+        <div class="text-box"><span>温馨提示：看看代码，给个满分不过分吧</span></div>
+    </div>
+    <div id="swiper">
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            swiper.init({
+                dom: '#swiper',
+                data: [
+                    'image/b1.png',
+                    'image/b2.png',
+                    'image/b3.png',
+                    'image/b4.png',
+                    'image/b5.png',
+                ],
+                activeItem: 0,
+                autoPlay: true,
+                delayTime: 3000
+            })
+        })
+    </script>
+</body>
+</html>

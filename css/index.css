@@ -1,0 +1,98 @@
+@keyframes rowup {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.tip {
+    width: 100%;
+    height: 30px;
+    background-color: #555;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.tip img {
+    flex: none;
+    width: 30px;
+    height: 30px;
+}
+.tip .text-box {
+    width: 100%;
+    flex: auto;
+    position: relative;
+}
+.text-box span {
+    position: absolute;
+    top: -7px;
+    -webkit-animation: 8s rowup linear infinite normal;
+    animation: 8s rowup linear infinite normal;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+#swiper {
+    width: 1200px;
+    height: 300px;
+    margin: 50px auto 0;
+    position: relative;
+    overflow: hidden;
+}
+#swiper .prePage {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+#swiper .nextPage {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 10;
+}
+#swiper .slideBox {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #999;
+}
+#swiper .slideBox .slideItem {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    flex: none;
+}
+#swiper .pageBox {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+#swiper .pageBox .pageItem {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 8px;
+    font-size: 8px;
+    line-height: 16px;
+    cursor: pointer;
+    background-color: #fff;
+}
+#swiper .pageBox .activePageItem {
+    background-color: rgb(255, 134, 134);
+    color: #fff;
+}
